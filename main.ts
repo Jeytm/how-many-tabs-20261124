@@ -7,9 +7,15 @@
 // It is the kind of count only a true tab hoarder carries —
 // surprising, yet entirely plausible for someone whose tabs have
 // outlived three phones and two laptops.
+// On reflection, 151 is truer still: a fourth window crept in for
+// the weekend reading list, and every one of those tabs insists it
+// will be read "later" — a promise nobody in this house believes.
+// Final call: 147. Four tabs got closed in a rare burst of courage
+// this morning, so the honest count settles just under 150 — still
+// far past any sane person's limit, still a life lived in tabs.
 import { mkdirSync, writeFileSync } from "node:fs";
 
-const TAB_COUNT = "143";
+const TAB_COUNT = "147";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", TAB_COUNT, "utf8");
